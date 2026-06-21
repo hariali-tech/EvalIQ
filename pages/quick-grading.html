@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Quick Grading — EvalIQ</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../css/style.css"/>
+<link rel="stylesheet" href="../css/grading.css"/>
+
+</head>
+<body>
+<div class="app-shell">
+<nav class="sidebar">
+  <div class="sb-logo">
+    <div class="sb-logo-mark">E</div>
+    <div><div class="sb-logo-text">EvalIQ</div><div class="sb-logo-sub">Instructor</div></div>
+  </div>
+  <div class="sb-nav" style="padding:6px 0">
+    <div class="sb-section">Main</div>
+    <a class="sb-link" href="dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span class="sb-link-text">Dashboard</span></a>
+    <a class="sb-link" href="classes.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg><span class="sb-link-text">My Classes</span></a>
+    <div class="sb-section">Grading</div>
+    <div class="sb-link on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z"/><polyline points="13 2 13 9 20 9"/></svg><span class="sb-link-text">Quick Grading</span><span class="sb-badge">5</span></div>
+    <a class="sb-link" href="rubric-select.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg><span class="sb-link-text">Rubrics</span></a>
+    <div class="sb-section">Results</div>
+    <a class="sb-link" href="review.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span class="sb-link-text">Review Grades</span></a>
+    <!--<a class="sb-link" href="analytics.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg><span class="sb-link-text">Analytics</span></a>-->
+    <div class="sb-divider"></div>
+    <a class="sb-link" href="tutorial.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span class="sb-link-text">Tutorial & Help</span></a>
+  </div>
+  <div class="sb-footer">
+    <div class="avatar">ME</div>
+    <div><div class="av-name">M. Ehsan</div><div class="av-role">Instructor</div></div>
+  </div>
+</nav>
+<div class="main-area">
+  <div class="topbar">
+    <div><div class="tb-title">⚡ Quick Grading</div><div class="tb-sub">Grade a question fast — paste answer, pick rubric, get result</div></div>
+    <div class="tb-right"><a class="btn btn-primary btn-sm" href="review.html">See all results →</a></div>
+  </div>
+  <div class="page-body">
+    <div class="g2" style="align-items:start">
+
+      <!-- LEFT: Input -->
+      <div>
+        <div class="card" style="margin-bottom:14px">
+          <div class="card-title">Step 1 — Select Class &amp; Question</div>
+          <div class="form-group">
+            <label class="form-label">Class</label>
+            <select class="form-input">
+              <option>CS-401 · Artificial Intelligence · Midterm</option>
+              <option>SE-301 · Software Engineering · Final</option>
+            </select>
+          </div>
+          <div class="form-group" style="margin-bottom:0">
+            <label class="form-label">Question</label>
+            <select class="form-input">
+              <option>Q2 — Explain forward propagation (20 marks)</option>
+              <option>Q1 — Define neural network (10 marks)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="card" style="margin-bottom:14px">
+          <div class="card-title">Step 2 — Select Rubric</div>
+          <div class="rubric-pill">
+            <div>
+              <div class="rubric-pill-name">CS-401 Midterm Rubric v2</div>
+              <div class="rubric-pill-meta">3 criteria · 20 marks total</div>
+            </div>
+            <a class="btn btn-sm" href="rubric-select.html">Change</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Step 3 — Student Answer</div>
+          <div class="input-mode">
+            <button class="btn btn-sm input-mode-btn active" type="button">📝 Type / Paste</button>
+            <button class="btn btn-sm input-mode-btn" type="button">📷 Upload Scan (PDF/Image)</button>
+          </div>
+          <textarea class="form-input" style="height:100px;margin-bottom:0">Forward propagation is the process where input data passes through neural network layers. Each layer applies a weighted sum followed by an activation function. Common activation functions include sigmoid, tanh, and ReLU. The output of each layer becomes the input to the next layer.</textarea>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
+            <span style="font-size:11px;color:var(--gray5)">Student ID (optional)</span>
+            <input style="width:140px;padding:5px 8px;font-size:12px;border:1px solid var(--border);border-radius:4px;" placeholder="e.g. S2023065001"/>
+          </div>
+          <button class="btn btn-primary btn-full" id="grade-now-btn" type="button" style="margin-top:12px">⚡ Grade Now</button>
+        </div>
+      </div>
+
+      <!-- RIGHT: Result -->
+      <div>
+        <div class="card" id="ai-result-panel" style="margin-bottom:14px;transition:opacity .2s">
+          <div class="card-title">AI Grading Result</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+            <div>
+              <div class="result-score">17<small>/20</small></div>
+              <div class="result-meta">AI total · pending review</div>
+            </div>
+            <div style="text-align:right">
+              <span class="bloom bl-3">⚡ Apply level</span>
+              <div class="result-meta" style="margin-top:5px">OCR confidence: 96%</div>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div class="criterion-result">
+              <div class="criterion-result-head"><span class="criterion-result-name">Define neural network</span><span class="criterion-result-score" style="color:var(--green)">5 / 5</span></div>
+              <div class="prog"><div class="prog-fill" style="width:100%;background:var(--green)"></div></div>
+              <div class="criterion-result-note">Excellent — accurate definition with biological analogy.</div>
+            </div>
+            <div class="criterion-result">
+              <div class="criterion-result-head"><span class="criterion-result-name">Explain forward propagation</span><span class="criterion-result-score" style="color:var(--amber)">6 / 8</span></div>
+              <div class="prog"><div class="prog-fill" style="width:75%;background:var(--amber)"></div></div>
+              <div class="criterion-result-note">Good explanation. Missing: ReLU and vanishing gradient connection.</div>
+            </div>
+            <div class="criterion-result">
+              <div class="criterion-result-head"><span class="criterion-result-name">Apply gradient descent</span><span class="criterion-result-score" style="color:var(--amber)">6 / 7</span></div>
+              <div class="prog"><div class="prog-fill" style="width:86%;background:var(--amber)"></div></div>
+              <div class="criterion-result-note">Correctly applied chain rule. Add the weight update formula W = W − α∇L.</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title" style="margin-bottom:8px">Bloom's Insight</div>
+          <div class="insight-box">Your answer is at <strong>Apply level</strong>. To reach Analyse level, compare ReLU with sigmoid and explain mathematically why one prevents vanishing gradients.</div>
+          <div style="display:flex;gap:8px;margin-top:12px">
+            <button class="btn btn-sm btn-ghost" type="button">Override score</button>
+            <button class="btn btn-sm btn-teal" style="flex:1;justify-content:center" type="button">✓ Approve &amp; Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="../js/app.js" defer></script>
+<script src="../js/grading.js" defer></script>
+</body>
+</html>

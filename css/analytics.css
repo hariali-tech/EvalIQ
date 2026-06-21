@@ -1,0 +1,15 @@
+/* ════════════════════════════════════════════
+   EvalIQ — Analytics styles
+   Used by: pages/analytics.html
+   ════════════════════════════════════════════ */
+
+/* ── Grade distribution bar chart ── */
+.chart-bars{display:flex;align-items:flex-end;gap:6px;height:100px}
+.chart-bar-col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:3px;height:100%}
+.chart-bar{width:100%;border-radius:3px 3px 0 0}
+.chart-bar-lbl{font-size:10px;color:var(--gray5)}
+
+/* ── Bloom's distribution rows ── */
+.bloom-row{display:flex;align-items:center;gap:8px}
+.bloom-row-lbl{font-size:11px;width:72px;color:var(--gray5)}
+.bloom-row-val{font-size:11px;color:var(--gray5);width:20px;text-align:right}

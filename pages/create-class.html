@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Create Class — EvalIQ</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../css/style.css"/>
+<link rel="stylesheet" href="../css/classes.css"/>
+
+</head>
+<body>
+<div class="app-shell">
+<nav class="sidebar">
+  <div class="sb-logo">
+    <div class="sb-logo-mark">E</div>
+    <div><div class="sb-logo-text">EvalIQ</div><div class="sb-logo-sub">Instructor</div></div>
+  </div>
+  <div class="sb-nav" style="padding:6px 0">
+    <div class="sb-section">Main</div>
+    <a class="sb-link" href="dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span class="sb-link-text">Dashboard</span></a>
+    <div class="sb-link on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg><span class="sb-link-text">My Classes</span></div>
+    <div class="sb-section">Grading</div>
+    <a class="sb-link" href="quick-grading.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z"/><polyline points="13 2 13 9 20 9"/></svg><span class="sb-link-text">Quick Grading</span><span class="sb-badge">5</span></a>
+    <a class="sb-link" href="rubric-select.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg><span class="sb-link-text">Rubrics</span></a>
+    <div class="sb-section">Results</div>
+    <a class="sb-link" href="review.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span class="sb-link-text">Review Grades</span></a>
+    <!--<a class="sb-link" href="analytics.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg><span class="sb-link-text">Analytics</span></a>-->
+    <div class="sb-divider"></div>
+    <a class="sb-link" href="tutorial.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span class="sb-link-text">Tutorial & Help</span></a>
+  </div>
+  <div class="sb-footer">
+    <div class="avatar">ME</div>
+    <div><div class="av-name">M. Ehsan</div><div class="av-role">Instructor</div></div>
+  </div>
+</nav>
+<div class="main-area">
+  <div class="topbar">
+    <div><div class="tb-title">Create New Class</div><div class="tb-sub">Set up your class and add an exam</div></div>
+    <div class="tb-right"><a class="btn btn-sm" href="classes.html">Cancel</a><a class="btn btn-primary btn-sm" href="rubric-select.html">Next: Add Rubric →</a></div>
+  </div>
+  <div class="page-body">
+    <div class="cc-steps">
+      <div class="cc-step active"><span class="cc-step-num">1</span>Class Details</div>
+      <div class="cc-step-divider"></div>
+      <div class="cc-step"><span class="cc-step-num">2</span>Add Rubric</div>
+      <div class="cc-step-divider"></div>
+      <div class="cc-step"><span class="cc-step-num">3</span>Invite Students</div>
+      <div class="cc-step-divider"></div>
+      <div class="cc-step"><span class="cc-step-num">4</span>Done</div>
+    </div>
+
+    <div class="g2">
+      <div>
+        <div class="card" style="margin-bottom:14px">
+          <div class="card-title">Class Information</div>
+          <div class="form-group"><label class="form-label">Class / Subject Name</label><input class="form-input" value="Artificial Intelligence" placeholder="e.g. Artificial Intelligence"/></div>
+          <div class="g2">
+            <div class="form-group"><label class="form-label">Course Code</label><input class="form-input" value="CS-401"/></div>
+            <div class="form-group"><label class="form-label">Session</label><select class="form-input"><option>Spring 2026</option><option>Fall 2025</option></select></div>
+          </div>
+          <div class="form-group"><label class="form-label">Department</label><select class="form-input"><option>Software Engineering</option><option>Computer Science</option></select></div>
+        </div>
+        <div class="card">
+          <div class="card-title">Exam / Assessment</div>
+          <div class="form-group"><label class="form-label">Assessment Name</label><input class="form-input" value="Midterm Examination" placeholder="e.g. Midterm, Quiz 1"/></div>
+          <div class="g2">
+            <div class="form-group"><label class="form-label">Date</label><input class="form-input" type="date" value="2026-05-20"/></div>
+            <div class="form-group"><label class="form-label">Submission Deadline</label><input class="form-input" type="date" value="2026-05-27"/></div>
+          </div>
+          <div class="form-group" style="margin-bottom:0">
+            <label class="form-label">Answer Format Accepted</label>
+            <div class="format-options">
+              <label class="format-option checked"><input type="checkbox" checked/> Handwritten (PDF/scan)</label>
+              <label class="format-option"><input type="checkbox"/> Typed text</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Invite Students</div>
+        <div class="notif warn" style="margin-bottom:12px"><span>You can add students now or skip and do it later.</span></div>
+        <div class="form-group"><label class="form-label">Invite by Email (one per line)</label><textarea class="form-input" style="height:100px" placeholder="s2023065001@students.umt.edu.pk&#10;s2023065002@students.umt.edu.pk"></textarea></div>
+        <div style="text-align:center;font-size:12px;color:var(--gray5);margin:10px 0">— or —</div>
+        <div class="upload-zone" style="padding:18px">
+          <div style="font-size:18px;margin-bottom:5px;color:var(--gray4)">📄</div>
+          <div style="font-size:12px;font-weight:500">Upload student list CSV</div>
+          <div style="font-size:11px;color:var(--gray5);margin-top:2px">StudentID, Name, Email</div>
+        </div>
+        <div style="margin-top:12px;padding:10px;background:var(--gray1);border-radius:var(--r-sm);font-size:11px;color:var(--gray5)">
+          💡 Students will receive an email with a link to join this class.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="../js/app.js" defer></script>
+</body>
+</html>

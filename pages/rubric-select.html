@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Rubric Manager — EvalIQ</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../css/style.css"/>
+<link rel="stylesheet" href="../css/rubric.css"/>
+
+</head>
+<body>
+<div class="app-shell">
+<nav class="sidebar">
+  <div class="sb-logo">
+    <div class="sb-logo-mark">E</div>
+    <div><div class="sb-logo-text">EvalIQ</div><div class="sb-logo-sub">Instructor</div></div>
+  </div>
+  <div class="sb-nav" style="padding:6px 0">
+    <div class="sb-section">Main</div>
+    <a class="sb-link" href="dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span class="sb-link-text">Dashboard</span></a>
+    <a class="sb-link" href="classes.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg><span class="sb-link-text">My Classes</span></a>
+    <div class="sb-section">Grading</div>
+    <a class="sb-link" href="quick-grading.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z"/><polyline points="13 2 13 9 20 9"/></svg><span class="sb-link-text">Quick Grading</span><span class="sb-badge">5</span></a>
+    <div class="sb-link on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg><span class="sb-link-text">Rubrics</span></div>
+    <div class="sb-section">Results</div>
+    <a class="sb-link" href="review.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span class="sb-link-text">Review Grades</span></a>
+    <!--<a class="sb-link" href="analytics.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg><span class="sb-link-text">Analytics</span></a>-->
+    <div class="sb-divider"></div>
+    <a class="sb-link" href="tutorial.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span class="sb-link-text">Tutorial & Help</span></a>
+  </div>
+  <div class="sb-footer">
+    <div class="avatar">ME</div>
+    <div><div class="av-name">M. Ehsan</div><div class="av-role">Instructor</div></div>
+  </div>
+</nav>
+<div class="main-area">
+  <div class="topbar">
+    <div><div class="tb-title">Rubric Manager</div><div class="tb-sub">How do you want to set up your rubric?</div></div>
+    <div class="tb-right"><a class="btn btn-sm btn-ghost" href="dashboard.html">← Back</a></div>
+  </div>
+  <div class="page-body">
+    <div style="max-width:720px;margin:0 auto">
+      <!-- How to add rubric heading -->
+      <div style="text-align:center;margin-bottom:24px">
+        <div style="font-size:16px;font-weight:600;color:var(--gray7);margin-bottom:4px">Choose how to set up your rubric</div>
+        <div style="font-size:12px;color:var(--gray5)">Pick the option that works best for you — all three lead to the same result</div>
+      </div>
+
+      <!-- 3 rubric options -->
+      <div class="g3" style="margin-bottom:24px">
+        <a class="rubric-option selected" href="rubric-builder.html">
+          <div class="rubric-option-icon" style="background:var(--blue-light)">✍️</div>
+          <div class="rubric-option-title">Build manually</div>
+          <div class="rubric-option-sub">Type each criterion and marks yourself — full control</div>
+          <div style="margin-top:10px"><span class="badge bd-blue">Recommended</span></div>
+        </a>
+        <a class="rubric-option" href="rubric-builder.html">
+          <div class="rubric-option-icon" style="background:#FEF3C7">📄</div>
+          <div class="rubric-option-title">Upload PDF rubric</div>
+          <div class="rubric-option-sub">Upload an existing rubric PDF — AI extracts criteria automatically</div>
+          <div style="margin-top:10px"><span class="badge bd-amber">AI-assisted</span></div>
+        </a>
+        <div class="rubric-option">
+          <div class="rubric-option-icon" style="background:var(--green-light)">📂</div>
+          <div class="rubric-option-title">Use saved rubric</div>
+          <div class="rubric-option-sub">Pick from a rubric you already created before</div>
+          <div style="margin-top:10px"><span class="badge bd-green">2 saved</span></div>
+        </div>
+      </div>
+
+      <!-- Upload PDF section -->
+      <div class="card" style="margin-bottom:16px">
+        <div class="card-title" style="margin-bottom:14px">📄 Upload Rubric PDF — AI will extract criteria</div>
+        <div class="upload-zone" style="margin-bottom:14px">
+          <div class="upload-icon">📋</div>
+          <div style="font-size:13px;font-weight:500;margin-bottom:5px">Drop your rubric PDF here</div>
+          <div style="font-size:11px;color:var(--gray5);margin-bottom:12px">Supports PDF, Word (.docx), or image scan · Max 10 MB</div>
+          <button class="btn btn-sm" type="button">Browse files</button>
+        </div>
+        <div style="background:var(--green-light);border:1px solid rgba(45,125,58,.2);border-radius:var(--r-sm);padding:10px 12px;display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div style="font-size:12.5px;font-weight:500;color:var(--green)">✓ cs401_midterm_rubric.pdf — AI extraction complete</div>
+            <div style="font-size:11px;color:var(--gray5);margin-top:1px">3 criteria detected · 20 marks total</div>
+          </div>
+          <a class="btn btn-sm btn-teal" href="rubric-builder.html">Review &amp; Edit →</a>
+        </div>
+      </div>
+
+      <!-- Saved rubrics -->
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+          <div class="card-title" style="margin-bottom:0">📂 Saved Rubrics</div>
+          <a class="btn btn-primary btn-sm" href="rubric-builder.html">+ New Rubric</a>
+        </div>
+        <table class="tbl">
+          <thead><tr><th>Rubric Name</th><th>Class</th><th>Criteria</th><th>Total Marks</th><th>Action</th></tr></thead>
+          <tbody>
+            <tr>
+              <td style="font-weight:500">CS-401 Midterm Rubric v2</td>
+              <td>CS-401 Midterm</td>
+              <td>3 criteria</td>
+              <td>20</td>
+              <td style="display:flex;gap:5px;padding:10px 12px"><a class="btn btn-sm btn-primary" href="quick-grading.html">Use this</a><a class="btn btn-sm" href="rubric-builder.html">Edit</a></td>
+            </tr>
+            <tr>
+              <td style="font-weight:500">SE-301 Final Rubric</td>
+              <td>SE-301 Final</td>
+              <td>5 criteria</td>
+              <td>40</td>
+              <td style="display:flex;gap:5px;padding:10px 12px"><a class="btn btn-sm btn-primary" href="quick-grading.html">Use this</a><a class="btn btn-sm" href="rubric-builder.html">Edit</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="../js/app.js" defer></script>
+<script src="../js/rubric.js" defer></script>
+</body>
+</html>

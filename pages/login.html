@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Login — EvalIQ</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../css/style.css"/>
+
+</head>
+<body>
+<div class="auth-page">
+  <div class="auth-box">
+    <div style="text-align:center;margin-bottom:24px">
+      <div class="auth-mark">E</div>
+      <div style="font-size:18px;font-weight:600;color:var(--gray7)">Welcome back</div>
+      <div style="font-size:12px;color:var(--gray5);margin-top:3px">EvalIQ — AI Powered Evaluation System · UMT</div>
+    </div>
+
+    <div class="role-tabs">
+      <div class="role-tab active">Instructor</div>
+      <div class="role-tab">Student</div>
+      <div class="role-tab">Admin</div>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Institutional Email</label>
+      <input class="form-input" type="email" value="m.ehsan@umt.edu.pk" placeholder="name@umt.edu.pk"/>
+    </div>
+    <div class="form-group" style="margin-bottom:6px">
+      <label class="form-label">Password</label>
+      <input class="form-input" type="password" value="••••••••"/>
+    </div>
+    <div style="display:flex;justify-content:space-between;margin-bottom:18px">
+      <label style="display:flex;align-items:center;gap:5px;font-size:11px;color:var(--gray5);cursor:pointer"><input type="checkbox" checked style="accent-color:var(--blue)"/> Remember me</label>
+      <span style="font-size:11px;color:var(--blue);cursor:pointer">Forgot password?</span>
+    </div>
+    <a class="btn btn-primary btn-full" href="dashboard.html">Sign In →</a>
+    <div style="text-align:center;margin-top:16px;font-size:12px;color:var(--gray5)">
+      New to EvalIQ? <a href="signup.html" style="color:var(--blue);font-weight:500">Create account</a>
+    </div>
+    <div style="margin-top:16px;background:var(--gray1);border-radius:var(--r-sm);padding:9px 12px;text-align:center;font-size:11px;color:var(--gray5)">
+      🔒 All data stays on your institution's server
+    </div>
+  </div>
+</div>
+<script src="../js/app.js" defer></script>
+</body>
+</html>

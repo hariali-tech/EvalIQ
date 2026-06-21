@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Classes — EvalIQ</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../css/style.css"/>
+<link rel="stylesheet" href="../css/classes.css"/>
+
+</head>
+<body>
+<div class="app-shell">
+<nav class="sidebar">
+  <div class="sb-logo">
+    <div class="sb-logo-mark">E</div>
+    <div><div class="sb-logo-text">EvalIQ</div><div class="sb-logo-sub">Instructor</div></div>
+  </div>
+  <div class="sb-nav" style="padding:6px 0">
+    <div class="sb-section">Main</div>
+    <a class="sb-link" href="dashboard.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><span class="sb-link-text">Dashboard</span></a>
+    <div class="sb-link on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg><span class="sb-link-text">My Classes</span></div>
+    <div class="sb-section">Grading</div>
+    <a class="sb-link" href="quick-grading.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z"/><polyline points="13 2 13 9 20 9"/></svg><span class="sb-link-text">Quick Grading</span><span class="sb-badge">5</span></a>
+    <a class="sb-link" href="rubric-select.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg><span class="sb-link-text">Rubrics</span></a>
+    <div class="sb-section">Results</div>
+    <a class="sb-link" href="review.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span class="sb-link-text">Review Grades</span></a>
+    <!--*<a class="sb-link" href="analytics.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg><span class="sb-link-text">Analytics</span></a>-->
+    <div class="sb-divider"></div>
+    <a class="sb-link" href="tutorial.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span class="sb-link-text">Tutorial & Help</span></a>
+  </div>
+  <div class="sb-footer">
+    <div class="avatar">ME</div>
+    <div><div class="av-name">M. Ehsan</div><div class="av-role">Instructor</div></div>
+  </div>
+</nav>
+<div class="main-area">
+  <div class="topbar">
+    <div><div class="tb-title">My Classes</div><div class="tb-sub">Spring 2026 · 3 active classes</div></div>
+    <div class="tb-right"><a class="btn btn-primary btn-sm" href="create-class.html">+ Create Class</a></div>
+  </div>
+  <div class="page-body">
+    <div class="g3" style="margin-bottom:16px">
+      <a class="class-card" href="quick-grading.html">
+        <div class="class-card-top" style="background:#185FA5"></div>
+        <div class="class-card-meta">
+          <div class="class-card-code">CS-401 · Spring 2026</div>
+          <div class="class-card-name">Artificial Intelligence</div>
+          <div class="class-card-tags">
+            <span class="badge bd-amber">5 pending</span>
+            <span class="badge bd-gray">41 students</span>
+          </div>
+          <div class="prog"><div class="prog-fill" style="width:78%"></div></div>
+          <div class="class-card-progress-lbl">78% graded</div>
+        </div>
+      </a>
+      <div class="class-card">
+        <div class="class-card-top" style="background:#0D9488"></div>
+        <div class="class-card-meta">
+          <div class="class-card-code">SE-301 · Spring 2026</div>
+          <div class="class-card-name">Software Engineering</div>
+          <div class="class-card-tags">
+            <span class="badge bd-green">All published</span>
+            <span class="badge bd-gray">34 students</span>
+          </div>
+          <div class="prog"><div class="prog-fill" style="width:100%;background:var(--green)"></div></div>
+          <div class="class-card-progress-lbl">100% graded</div>
+        </div>
+      </div>
+      <a class="class-card class-card-new" href="create-class.html">
+        <div class="class-card-new-inner">
+          <div class="class-card-new-plus">+</div>
+          <div style="font-size:12.5px;font-weight:500">Create New Class</div>
+          <div style="font-size:11px;margin-top:2px">Set up a class or exam</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+<script src="../js/app.js" defer></script>
+</body>
+</html>

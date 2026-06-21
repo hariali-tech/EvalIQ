@@ -1,0 +1,29 @@
+/* ════════════════════════════════════════════
+   EvalIQ — Grading styles
+   Used by: pages/quick-grading.html, pages/review.html
+   ════════════════════════════════════════════ */
+
+/* ── QUICK GRADING — input mode toggle ── */
+.input-mode{display:flex;gap:8px;margin-bottom:12px}
+.input-mode-btn{}
+.input-mode-btn.active{background:var(--blue-light);border-color:rgba(24,95,165,.2);color:var(--blue)}
+
+/* ── QUICK GRADING — rubric pill shown after selection ── */
+.rubric-pill{background:var(--blue-light);border:1px solid rgba(24,95,165,.2);border-radius:var(--r-sm);padding:10px 12px;display:flex;justify-content:space-between;align-items:center}
+.rubric-pill-name{font-size:12.5px;font-weight:500;color:var(--blue)}
+.rubric-pill-meta{font-size:11px;color:var(--gray5);margin-top:1px}
+
+/* ── QUICK GRADING — AI result panel ── */
+.result-score{font-size:28px;font-weight:600;color:var(--gray7)}
+.result-score small{font-size:14px;color:var(--gray5);font-weight:400}
+.result-meta{font-size:11px;color:var(--gray5);margin-top:2px}
+.criterion-result{padding:10px;background:var(--gray1);border-radius:var(--r-sm)}
+.criterion-result + .criterion-result{margin-top:8px}
+.criterion-result-head{display:flex;justify-content:space-between;margin-bottom:4px}
+.criterion-result-name{font-size:12px;font-weight:500}
+.criterion-result-score{font-size:12px;font-weight:600}
+.criterion-result-note{font-size:11px;color:var(--gray5);margin-top:5px}
+.insight-box{background:var(--purple-light);border-radius:var(--r-sm);padding:10px;font-size:12px;color:var(--purple);line-height:1.6}
+
+/* ── GRADE REVIEW — score cell with confidence bar ── */
+.conf-cell .prog{width:80px;margin-top:3px}

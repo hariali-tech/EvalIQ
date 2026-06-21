@@ -1,0 +1,23 @@
+/* ════════════════════════════════════════════
+   EvalIQ — Dashboard styles
+   Used by: pages/dashboard.html
+   ════════════════════════════════════════════ */
+
+/* Quick action tiles in the "Quick Actions" card */
+.quick-action{
+  display:flex;align-items:center;gap:10px;
+  border:1px solid var(--border);border-radius:var(--r-lg);
+  padding:14px;cursor:pointer;transition:border-color .12s;
+}
+.quick-action:hover{border-color:var(--blue)}
+.quick-action-icon{
+  width:36px;height:36px;border-radius:var(--r-sm);
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;flex-shrink:0;
+}
+.quick-action-title{font-size:12.5px;font-weight:500}
+.quick-action-sub{font-size:11px;color:var(--gray5)}
+
+/* Stat tile accent colors used on the dashboard */
+.stat-amber .stat-num{color:var(--amber)}
+.stat-teal .stat-num{color:var(--teal)}
